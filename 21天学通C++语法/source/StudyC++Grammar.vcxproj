@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5c710fda-07be-4f93-83a0-93fdeed487df}</ProjectGuid>
+    <RootNamespace>StudyCGrammar</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="1.1 Hello World.cpp" />
+    <ClCompile Include="1.Quiz4.cpp" />
+    <ClCompile Include="10.1 SimplePisceanClassHeirarchy.cpp" />
+    <ClCompile Include="10.10 MultipleInheritance_Platypus.cpp" />
+    <ClCompile Include="10.2 Fish_With_protected.cpp" />
+    <ClCompile Include="10.3 Fish_WithBaseClassInstantiation.cpp" />
+    <ClCompile Include="10.4 DerivedClassOverridingMethod.cpp" />
+    <ClCompile Include="10.5 CarMotor.cpp" />
+    <ClCompile Include="10.5 InvokingBaseMethods_InSpiteOverride.cpp" />
+    <ClCompile Include="10.6 MethodHiding.cpp" />
+    <ClCompile Include="10.6 Protected_SuperCar.cpp" />
+    <ClCompile Include="10.7 SequenceConstructionDestruction.cpp" />
+    <ClCompile Include="10.Ex1 PlatypusConstructorOrder.cpp" />
+    <ClCompile Include="11.1 InvokingSwimUsingFishPtr.cpp" />
+    <ClCompile Include="11.2 FishSwim_VirtualMethod.cpp" />
+    <ClCompile Include="11.3 WithoutVirtualDestructors.cpp" />
+    <ClCompile Include="11.4 VirtualDestructors.cpp" />
+    <ClCompile Include="11.5 SizeofBaseClassWithVirtualFunctions.cpp" />
+    <ClCompile Include="11.6 FishABC.cpp" />
+    <ClCompile Include="11.7 MultipleInheritance_Platypus.cpp" />
+    <ClCompile Include="11.8 VirtualInheritance_Platypus.cpp" />
+    <ClCompile Include="11.9 VirtualCopyConstructors.cpp" />
+    <ClCompile Include="11.Ex3.cpp" />
+    <ClCompile Include="11.Quiz1.cpp" />
+    <ClCompile Include="12.1 Date_PrefixOperatorsIncDec.cpp" />
+    <ClCompile Include="12.10 FunctionObjects_Functors_Operator().cpp" />
+    <ClCompile Include="12.11 MoveConstructorAssignmentOperator.cpp" />
+    <ClCompile Include="12.12 UDLtoKelvin.cpp" />
+    <ClCompile Include="12.2 OperatorConstCharPtr.cpp" />
+    <ClCompile Include="12.3 UniquePtr.cpp" />
+    <ClCompile Include="12.4 BinaryAdditionSubtractionOperator.cpp" />
+    <ClCompile Include="12.5 AddSubAssignment.cpp" />
+    <ClCompile Include="12.6 Equality_Inequality_Comparison.cpp" />
+    <ClCompile Include="12.7 ComparisonLessThanGreaterThanEqualTo.cpp" />
+    <ClCompile Include="12.8 MyStringCopyAssignmentOperator.cpp" />
+    <ClCompile Include="12.9 ArraySubscriptOperator_MyString.cpp" />
+    <ClCompile Include="13.1 dynamic_cast_Fish.cpp" />
+    <ClCompile Include="13.Ex2.cpp" />
+    <ClCompile Include="14.1 MacroConstants.cpp" />
+    <ClCompile Include="14.2 MacroFunctions.cpp" />
+    <ClCompile Include="14.3 TemplateFunctionGetMax.cpp" />
+    <ClCompile Include="14.4 HoldsPairWithMain.cpp" />
+    <ClCompile Include="14.5 TemplateSpecialization.cpp" />
+    <ClCompile Include="14.6 StaticWithinTemplate.cpp" />
+    <ClCompile Include="14.7 VariableTemplatesSum.cpp" />
+    <ClCompile Include="14.8 Tuple.cpp" />
+    <ClCompile Include="14.9 StaticAssert.cpp" />
+    <ClCompile Include="14.Ex6 DisplayVariadicTemp.cpp" />
+    <ClCompile Include="15.1 ContainerIteratorRelationship.cpp" />
+    <ClCompile Include="16.1 STLStringInstantiationCopy.cpp" />
+    <ClCompile Include="16.2 AccessingCharElements.cpp" />
+    <ClCompile Include="16.3 ConcatenateAdditionAssignmentAppend.cpp" />
+    <ClCompile Include="16.4 StringFind.cpp" />
+    <ClCompile Include="16.5 StringTruncate.cpp" />
+    <ClCompile Include="16.6 StringReverse.cpp" />
+    <ClCompile Include="16.7 StringCaseConversion.cpp" />
+    <ClCompile Include="16.8 StringLiteralsCPP14.cpp" />
+    <ClCompile Include="16.Ex1 IsPalindrom.cpp" />
+    <ClCompile Include="16.Ex2 NumVowels.cpp" />
+    <ClCompile Include="16.Ex3 AlternateCharUC.cpp" />
+    <ClCompile Include="16.Ex4 InsertSpacesInStr.cpp" />
+    <ClCompile Include="16.Ex5 FindCharA.cpp" />
+    <ClCompile Include="17.1 InstantiatingStdVector.cpp" />
+    <ClCompile Include="17.2 InsertingPushBack.cpp" />
+    <ClCompile Include="17.3 VectorInsert.cpp" />
+    <ClCompile Include="17.4 VectorElementAccessArray.cpp" />
+    <ClCompile Include="17.5 VectorPointerSemantics.cpp" />
+    <ClCompile Include="17.6 VectorPopBack.cpp" />
+    <ClCompile Include="17.7 SizeCapacity.cpp" />
+    <ClCompile Include="17.8 DequeInsertionsDeletions.cpp" />
+    <ClCompile Include="17.Ex1 QueryVector.cpp" />
+    <ClCompile Include="17.Ex3 VectorPackageDimensions.cpp" />
+    <ClCompile Include="17.Ex4 DequeListInit.cpp" />
+    <ClCompile Include="18.1 InstantiatingList.cpp" />
+    <ClCompile Include="18.2 InsertingFrontEnd.cpp" />
+    <ClCompile Include="18.3 ListInsert.cpp" />
+    <ClCompile Include="18.4 ListErase.cpp" />
+    <ClCompile Include="18.5 ListReverse.cpp" />
+    <ClCompile Include="18.6 ListSort.cpp" />
+    <ClCompile Include="18.7 SortContactsList.cpp" />
+    <ClCompile Include="18.8 ForwardList.cpp" />
+    <ClCompile Include="18.Ex3 InsertVecInList.cpp" />
+    <ClCompile Include="18.Ex4 ListStrings.cpp" />
+    <ClCompile Include="19.1 InstantiatingSetMSet.cpp" />
+    <ClCompile Include="19.2 InsertSetMSet.cpp" />
+    <ClCompile Include="19.3 SetFind.cpp" />
+    <ClCompile Include="19.4 MSetErase.cpp" />
+    <ClCompile Include="19.5 SetContactsList.cpp" />
+    <ClCompile Include="19.6 UnorderedSet.cpp" />
+    <ClCompile Include="19.Ex1 ContactsSortedByNums.cpp" />
+    <ClCompile Include="19.Ex2 WordAndMeaning.cpp" />
+    <ClCompile Include="19.Ex3 SetMSetCompare.cpp" />
+    <ClCompile Include="2.1 HelloWorldAnalysis.cpp" />
+    <ClCompile Include="2.2 UsingNamespaceDecl.cpp" />
+    <ClCompile Include="2.3 UsingRestricted.cpp" />
+    <ClCompile Include="2.4 FirstFunction_Demo_cout.cpp" />
+    <ClCompile Include="2.5 FunctionValueReturnedFromMain.cpp" />
+    <ClCompile Include="2.6 Anatomy_BasicIO.cpp" />
+    <ClCompile Include="2.Ex3.cpp" />
+    <ClCompile Include="20.1 InstantiatingMapMultimap.cpp" />
+    <ClCompile Include="20.2 InsertingElements.cpp" />
+    <ClCompile Include="20.3 MapFind.cpp" />
+    <ClCompile Include="20.4 MapErase.cpp" />
+    <ClCompile Include="20.5 MultiMapWithPredicate.cpp" />
+    <ClCompile Include="20.6 unordered_map_sample.cpp" />
+    <ClCompile Include="21.1 FunctionObjects.cpp" />
+    <ClCompile Include="21.2 StatefulFunctionObject.cpp" />
+    <ClCompile Include="21.3 UnaryPredicate.cpp" />
+    <ClCompile Include="21.4 UsingUnaryPredicate.cpp" />
+    <ClCompile Include="21.5 BinaryFunctionMultiplyRanges.cpp" />
+    <ClCompile Include="21.6 BinaryPredicateCaseInsensitive.cpp" />
+    <ClCompile Include="21.7 BinarySortPredicate.cpp" />
+    <ClCompile Include="21.8 LambdaDisplayContainerForEach.cpp" />
+    <ClCompile Include="21.Ex1 DoubleElement.cpp" />
+    <ClCompile Include="21.Ex3 BinaryPredSort.cpp" />
+    <ClCompile Include="22.1 LambdaDisplayElements.cpp" />
+    <ClCompile Include="22.2 LambdaFindIfEvenNumbers.cpp" />
+    <ClCompile Include="22.3 LambdaVersionIsMultiple.cpp" />
+    <ClCompile Include="22.4 LambdaBinaryFunc.cpp" />
+    <ClCompile Include="22.5 LambdaCaseInsensitiveSort.cpp" />
+    <ClCompile Include="22.Ex1 LambdaSort.cpp" />
+    <ClCompile Include="22.Ex2 LambdAddsNum.cpp" />
+    <ClCompile Include="23.1 UsingFind.cpp" />
+    <ClCompile Include="23.10 SortUniqueBS.cpp" />
+    <ClCompile Include="23.11 PartitionStablePartition.cpp" />
+    <ClCompile Include="23.12 LowerBoundUpperBound.cpp" />
+    <ClCompile Include="23.2 UsingCount.cpp" />
+    <ClCompile Include="23.3 UsingSearch.cpp" />
+    <ClCompile Include="23.4 FillAndFillN.cpp" />
+    <ClCompile Include="23.5 UsingGenerate.cpp" />
+    <ClCompile Include="23.6 UsingForEach.cpp" />
+    <ClCompile Include="23.7 UsingTransform.cpp" />
+    <ClCompile Include="23.8 CopyRemoveRemoveIf.cpp" />
+    <ClCompile Include="23.9 ReplaceReplaceIf.cpp" />
+    <ClCompile Include="23.Ex2 IteratorsCopy.cpp" />
+    <ClCompile Include="24.1 InstantiatingStack.cpp" />
+    <ClCompile Include="24.2 StackPushPop.cpp" />
+    <ClCompile Include="24.3 STLQueue.cpp" />
+    <ClCompile Include="24.4 QueueOperations.cpp" />
+    <ClCompile Include="24.5 InstantiatingPriorityQueue.cpp" />
+    <ClCompile Include="24.6 PriorityQueueOperations.cpp" />
+    <ClCompile Include="24.7 PriorityQueueWithPredicate.cpp" />
+    <ClCompile Include="25.1 InstantiatingBitSet.cpp" />
+    <ClCompile Include="25.2 BitSetOperations.cpp" />
+    <ClCompile Include="25.3 InstantiatingVectorBool.cpp" />
+    <ClCompile Include="25.4 UsingVectorBool.cpp" />
+    <ClCompile Include="25.Ex1 UseBitset.cpp" />
+    <ClCompile Include="26.1 MinimalSmartPtr.cpp" />
+    <ClCompile Include="26.2 DeepCopyPtr.cpp" />
+    <ClCompile Include="26.3 DestructiveCopyPtr.cpp" />
+    <ClCompile Include="26.4 UsingUniquePtr.cpp" />
+    <ClCompile Include="26.Ex2 FishUniquePtr.cpp" />
+    <ClCompile Include="27.1 CoutFormattingNumbers.cpp" />
+    <ClCompile Include="27.10 BinaryFile.cpp" />
+    <ClCompile Include="27.11 StringStream.cpp" />
+    <ClCompile Include="27.2 CoutNumPrecision.cpp" />
+    <ClCompile Include="27.3 CoutSetWSetFill.cpp" />
+    <ClCompile Include="27.4 SimpleInputUsingCin.cpp" />
+    <ClCompile Include="27.5 ReadingWordLine.cpp" />
+    <ClCompile Include="27.6 CinReadingWordLine.cpp" />
+    <ClCompile Include="27.7 UsingGetLine.cpp" />
+    <ClCompile Include="27.8 WritingToFile.cpp" />
+    <ClCompile Include="27.9 ReadingTextFile.cpp" />
+    <ClCompile Include="28.1 ExceptionSafetyInNew.cpp" />
+    <ClCompile Include="28.2 CatchingAType.cpp" />
+    <ClCompile Include="28.3 ExceptionOnDivideByZero.cpp" />
+    <ClCompile Include="28.4 StackUnwindingOnException.cpp" />
+    <ClCompile Include="28.5 CustomException.cpp" />
+    <ClCompile Include="3.1 VariablesDemo_MultiplyTwoNumbers.cpp" />
+    <ClCompile Include="3.2 VariablesScopeDemo.cpp" />
+    <ClCompile Include="3.3 GlobalVariablesDemo.cpp" />
+    <ClCompile Include="3.4 Operators_Signed_Unsigned_Overflow.cpp" />
+    <ClCompile Include="3.5 Using_sizeof.cpp" />
+    <ClCompile Include="3.6 UsingAuto.cpp" />
+    <ClCompile Include="3.7 Demo_Constants.cpp" />
+    <ClCompile Include="3.8 using constexpr.cpp" />
+    <ClCompile Include="3.9 Using_enum_Constants.cpp" />
+    <ClCompile Include="3.Ex3 Calculate_Area_Circumference.cpp" />
+    <ClCompile Include="4.1 AccessingArrayElements.cpp" />
+    <ClCompile Include="4.2 WritingToArrayElements.cpp" />
+    <ClCompile Include="4.3 Declaring_Initializing_MD_Arrays.cpp" />
+    <ClCompile Include="4.4 Dynamic_Array_std_vector.cpp" />
+    <ClCompile Include="4.5 C-Style_HelloWorld.cpp" />
+    <ClCompile Include="4.6 UserInput_C_Style_String.cpp" />
+    <ClCompile Include="4.7 CPPStrings_std_string.cpp" />
+    <ClCompile Include="4.Ex1.cpp" />
+    <ClCompile Include="5.1 Check_ArithmeticOperators.cpp" />
+    <ClCompile Include="5.10 Operator_sizeof.cpp" />
+    <ClCompile Include="5.2 Operators_PostFix_Prefix.cpp" />
+    <ClCompile Include="5.3 Operators_Relational_Equality.cpp" />
+    <ClCompile Include="5.4 Operators_Logical_AND_OR.cpp" />
+    <ClCompile Include="5.5 Operators_Logical_And_Or_If.cpp" />
+    <ClCompile Include="5.6 Operators_Logical_OR.cpp" />
+    <ClCompile Include="5.7 Operators_Bitwise.cpp" />
+    <ClCompile Include="5.8 Operators_BitwiseShift.cpp" />
+    <ClCompile Include="5.9 Operators_CompoundOperators.cpp" />
+    <ClCompile Include="5.Ex3.cpp" />
+    <ClCompile Include="5.Quiz5.cpp" />
+    <ClCompile Include="6.1 Multiply_or_Add_if_else.cpp" />
+    <ClCompile Include="6.10 EnterValuesInAnArray_DisplayArray_for_loop.cpp" />
+    <ClCompile Include="6.11 MultiplyAdd_for_loop.cpp" />
+    <ClCompile Include="6.12 RangeBasedFor.cpp" />
+    <ClCompile Include="6.13 MultiplyAdd_InfiniteLoop_break_continue.cpp" />
+    <ClCompile Include="6.14 CrossMultiplyTwoArrays_NestedLoops.cpp" />
+    <ClCompile Include="6.15 IteratingMDArrays_nested_loops.cpp" />
+    <ClCompile Include="6.16 FibonacciSeries_usingLoops.cpp" />
+    <ClCompile Include="6.2 checkbounds.cpp" />
+    <ClCompile Include="6.3 Nested_if_check_Divisor.cpp" />
+    <ClCompile Include="6.4 WhatDaysOfWeekMean_if_else.cpp" />
+    <ClCompile Include="6.5 DaysOfWeek_switch_case.cpp" />
+    <ClCompile Include="6.6 ConditionalOperator_TernaryOperator.cpp" />
+    <ClCompile Include="6.7 MultiplyOrAdd_goto.cpp" />
+    <ClCompile Include="6.8 MultiplyOrAdd_while.cpp" />
+    <ClCompile Include="6.9 MultiplyAdd_do_while.cpp" />
+    <ClCompile Include="6.Ex1.cpp" />
+    <ClCompile Include="6.Ex2.cpp" />
+    <ClCompile Include="6.Ex3.cpp" />
+    <ClCompile Include="6.Ex4.cpp" />
+    <ClCompile Include="7.1 Functions_ComputingAreaCircumference.cpp" />
+    <ClCompile Include="7.10 Functions_Inline.cpp" />
+    <ClCompile Include="7.11 auto function return.cpp" />
+    <ClCompile Include="7.12 Functions_Lambda.cpp" />
+    <ClCompile Include="7.2 Functions_MultipleParameters_Cylinder.cpp" />
+    <ClCompile Include="7.3 Functions_SayingHelloWithoutParamsReturnValue.cpp" />
+    <ClCompile Include="7.4 Functions_DefaulParameters_Pi.cpp" />
+    <ClCompile Include="7.5 Functions_Recursive_Fibonacci.cpp" />
+    <ClCompile Include="7.6 Functions_MultipleReturns.cpp" />
+    <ClCompile Include="7.7 Functions_Overloaded_Area_CyclinderCircle.cpp" />
+    <ClCompile Include="7.8 Functions_Passing_Arrays.cpp" />
+    <ClCompile Include="7.9 Functions_PassingReference.cpp" />
+    <ClCompile Include="8.1 Pointers_ReferencingOperator.cpp" />
+    <ClCompile Include="8.10 Pointers_const_calculatingsquare.cpp" />
+    <ClCompile Include="8.11 Pointers_ArrayVar_IsAddressOfFirst.cpp" />
+    <ClCompile Include="8.12 Pointers_Arrays_Similarities.cpp" />
+    <ClCompile Include="8.13 Pointers_InvalidPtr.cpp" />
+    <ClCompile Include="8.14 Pointers_BetterProgramming.cpp" />
+    <ClCompile Include="8.15 Pointers_new_exceptionhandler.cpp" />
+    <ClCompile Include="8.16 Pointers_new_nothrow.cpp" />
+    <ClCompile Include="8.17 References_Declaring_Initializing.cpp" />
+    <ClCompile Include="8.18 References_PassingArgsToFunctions.cpp" />
+    <ClCompile Include="8.19 References_Const.cpp" />
+    <ClCompile Include="8.2 Pointers_AssigningRefToPtr.cpp" />
+    <ClCompile Include="8.3 Pointers_OnePtrManyIntegers.cpp" />
+    <ClCompile Include="8.4 Pointers_Dereferencing_or_IndirectionOperator.cpp" />
+    <ClCompile Include="8.5 Pointers_AssigningUsingDerefOp.cpp" />
+    <ClCompile Include="8.6 Pointers_sizeof_Test.cpp" />
+    <ClCompile Include="8.7 Pointers_Using_new_delete.cpp" />
+    <ClCompile Include="8.8 Pointers_Using_new_delete_char_array.cpp" />
+    <ClCompile Include="8.9 Pointer_using_new_delete_multiple_elements.cpp" />
+    <ClCompile Include="9.1 ClassHuman.cpp" />
+    <ClCompile Include="9.10 Singleton.cpp" />
+    <ClCompile Include="9.11 MonsterDB_ForceConstructionOnHeap.cpp" />
+    <ClCompile Include="9.12 explicit constructors.cpp" />
+    <ClCompile Include="9.13 SizeOfClass.cpp" />
+    <ClCompile Include="9.14 FriendFunctions.cpp" />
+    <ClCompile Include="9.15 FriendClass.cpp" />
+    <ClCompile Include="9.16 UsingUnions.cpp" />
+    <ClCompile Include="9.17 AggregateInitializationClasses.cpp" />
+    <ClCompile Include="9.18 constexpr class.cpp" />
+    <ClCompile Include="9.2 DemonstratesAbstraction_HidesTrueAge.cpp" />
+    <ClCompile Include="9.3 ClassWithConstructors.cpp" />
+    <ClCompile Include="9.4 Overloaded Constructors.cpp" />
+    <ClCompile Include="9.5 OnlyOverloadedConstructor_NoDefault.cpp" />
+    <ClCompile Include="9.6 Constructor_InitializationLists.cpp" />
+    <ClCompile Include="9.7 MyString_Destructor.cpp" />
+    <ClCompile Include="9.8 NoCopyConstructor_CopyMyString.cpp" />
+    <ClCompile Include="9.9 CopyConstructor_MyString.cpp" />
+    <ClCompile Include="9.Ex3.cpp" />
+    <ClCompile Include="9.Ex4 Circle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="23.10 SortUniqueBS.cpp~" />
+    <None Include="24.2 StackPushPop.cpp~" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
